@@ -4,7 +4,19 @@ Python SDK for the TopCharge merchant API. The synchronous client has no externa
 
 ## Release status
 
-This SDK is currently installed from this repository for local development. Do not treat its distribution name as a published PyPI package until an official release is announced.
+The SDK is publicly available on PyPI as [`topcharge` 1.0.0](https://pypi.org/project/topcharge/1.0.0/).
+
+## Install from PyPI
+
+```bash
+python3 -m pip install topcharge
+```
+
+For async framework support:
+
+```bash
+python3 -m pip install 'topcharge[async]'
+```
 
 ## Install locally
 
