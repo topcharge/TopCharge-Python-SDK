@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topcharge-sdk"
+version = "1.0.0"
+description = "Official Python SDK for the TopCharge merchant API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "TopCharge" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only"
+]
+
+[project.optional-dependencies]
+async = ["httpx>=0.27,<1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
